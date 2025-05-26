@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namesapce Avramov.SpaceDrons
+namespace Avramov.SpaceDrons
 {
     #ROOTNAMESPACEBEGIN#
     public class #SCRIPTNAME# : MonoBehaviour
@@ -9,4 +9,3 @@ namesapce Avramov.SpaceDrons
     }
 }
 #ROOTNAMESPACEEND#
-}

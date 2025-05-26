@@ -1,11 +1,11 @@
 using UnityEngine;
 
-namesapce Avramov.SpaceDrons
+namespace Avramov.SpaceDrons
 {
     #ROOTNAMESPACEBEGIN#
     public class #SCRIPTNAME#
     {
         #NOTRIM#
     }
-#ROOTNAMESPACEEND#
 }
+#ROOTNAMESPACEEND#

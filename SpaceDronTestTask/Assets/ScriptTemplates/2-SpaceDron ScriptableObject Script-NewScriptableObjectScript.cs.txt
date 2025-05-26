@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namesapce Avramov.SpaceDrons
+namespace Avramov.SpaceDrons
 {
     #ROOTNAMESPACEBEGIN#
     [CreateAssetMenu(fileName = "#SCRIPTNAME#", menuName = "SpaceDrons/#SCRIPTNAME#")]
@@ -8,5 +8,5 @@ namesapce Avramov.SpaceDrons
     {
         #NOTRIM#
     }
-#ROOTNAMESPACEEND#
 }
+#ROOTNAMESPACEEND#

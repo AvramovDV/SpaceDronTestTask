@@ -10,11 +10,13 @@ namespace Avramov.SpaceDrons
             InstallControllers();
             InstallSceneObjects();
             InstallSystems();
+            InstallDynamics();
         }
 
         private void InstallModels()
         {
             Container.Bind<MatchSettingsModel>().AsSingle();
+            Container.Bind<MatchModel>().AsSingle();
         }
 
         private void InstallControllers()
@@ -26,6 +28,8 @@ namespace Avramov.SpaceDrons
         private void InstallSceneObjects()
         {
             Container.Bind<ScreensManager>().FromComponentInHierarchy().AsSingle();
+            Container.Bind<ResourceSpawner>().FromComponentInHierarchy().AsSingle();
+            Container.Bind<DronSpawner>().FromComponentInHierarchy().AsSingle();
         }
 
         private void InstallSystems()
@@ -34,6 +38,15 @@ namespace Avramov.SpaceDrons
             Container.BindInterfacesAndSelfTo<StartScreenSystem>().AsSingle();
 
             Container.BindInterfacesAndSelfTo<GameSettingsScreenSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<ResourceSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<DronsSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<MatchScoreScreenSystem>().AsSingle();
+            Container.BindInterfacesAndSelfTo<ScoreEffectSystem>().AsSingle();
+        }
+
+        private void InstallDynamics()
+        {
+            Container.Bind<DronLogic>().AsTransient();
         }
     }
 }

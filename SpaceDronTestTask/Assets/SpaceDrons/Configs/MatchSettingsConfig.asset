@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MatchSettingsConfig
   m_EditorClassIdentifier: 
   <DefaultSettings>k__BackingField:
-    DronsCount: 2
+    DronsCount: 1
     DronsSpeed: 1
     ResourcesSpawnRate: 1
     ResourcesCount: 20

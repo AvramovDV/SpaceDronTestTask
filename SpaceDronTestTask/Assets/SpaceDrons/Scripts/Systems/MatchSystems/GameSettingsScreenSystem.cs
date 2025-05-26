@@ -7,13 +7,15 @@ namespace Avramov.SpaceDrons
     {
         private ScreensManager _screensManager;
         private MatchSettingsModel _matchSettingsModel;
+        private SystemsController _systemsController;
 
         private GameSettingsScreen _screen;
 
-        public GameSettingsScreenSystem(ScreensManager screensManager, MatchSettingsModel matchSettingsModel)
+        public GameSettingsScreenSystem(ScreensManager screensManager, MatchSettingsModel matchSettingsModel, SystemsController systemsController)
         {
             _screensManager = screensManager;
             _matchSettingsModel = matchSettingsModel;
+            _systemsController = systemsController;
         }
 
         protected override void Activated()
@@ -95,7 +97,7 @@ namespace Avramov.SpaceDrons
 
         private void Exit(PointerEventData data)
         {
-
+            _systemsController.SetupEnterSystems();
         }
     }
 }

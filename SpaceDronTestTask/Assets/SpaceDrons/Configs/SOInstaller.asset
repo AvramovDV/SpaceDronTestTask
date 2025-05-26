@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: SOInstaller
   m_EditorClassIdentifier: 
   _settingsConfig: {fileID: 11400000, guid: 954dc741918330d4d8b0334a1d756290, type: 2}
+  _scoreEffects: {fileID: 11400000, guid: 15b8e324d051ff44fbcf792a909aefa9, type: 2}

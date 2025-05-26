@@ -22,6 +22,7 @@ namespace Avramov.SpaceDrons
                 _screen = _screensManager.GetScreen<StartScreen>();
 
             _screen.StartButton.ClickEvent += OnStartClick;
+            _screen.ExitButton.ClickEvent += OnExitClick;
 
             _screen.gameObject.SetActive(true);
         }
@@ -29,12 +30,18 @@ namespace Avramov.SpaceDrons
         protected override void Deactivated()
         {
             _screen.StartButton.ClickEvent -= OnStartClick;
+            _screen.ExitButton.ClickEvent -= OnExitClick;
             _screen.gameObject.SetActive(false);
         }
 
         private void OnStartClick(PointerEventData eventData)
         {
             _systemsController.SetupMatchSystems();
+        }
+
+        private void OnExitClick(PointerEventData eventData)
+        {
+            Application.Quit();
         }
     }
 }

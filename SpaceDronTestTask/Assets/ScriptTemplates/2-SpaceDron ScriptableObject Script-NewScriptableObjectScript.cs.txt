@@ -1,0 +1,12 @@
+using UnityEngine;
+
+namesapce Avramov.SpaceDrons
+{
+    #ROOTNAMESPACEBEGIN#
+    [CreateAssetMenu(fileName = "#SCRIPTNAME#", menuName = "SpaceDrons/#SCRIPTNAME#")]
+    public class #SCRIPTNAME# : ScriptableObject
+    {
+        #NOTRIM#
+    }
+#ROOTNAMESPACEEND#
+}

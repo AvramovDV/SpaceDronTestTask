@@ -1,0 +1,11 @@
+using UnityEngine;
+
+namesapce Avramov.SpaceDrons
+{
+    #ROOTNAMESPACEBEGIN#
+    public class #SCRIPTNAME#
+    {
+        #NOTRIM#
+    }
+#ROOTNAMESPACEEND#
+}
